@@ -3,6 +3,7 @@
 {% load bootstrap3 %}
 
 <div>
+    <h3>All names and passwords are alphanumeric</h3>
 <form action="{% url 'add' %}" method="post" class='form'>
     {% csrf_token %}
     {% bootstrap_form form %}

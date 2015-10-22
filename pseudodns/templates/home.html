@@ -1,5 +1,12 @@
 {% extends 'base.html' %}
 
 {% block body %}
-BODY
+<h1>Basic Working</h1>
+<ul>
+    <li>/<name>/status : status of <name> in JSON</li>
+    <li>/<name>/<password>/poweron/ : set the status of <name> as on</li>
+    <li>/<name>/<password>/poweroff/ : set the status of <name> as off</li>
+</ul>
+
+register a new name at the Add url.
 {% endblock %}

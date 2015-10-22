@@ -10,7 +10,7 @@ class Mapper(models.Model):
 
     name = models.CharField(max_length=100, unique=True)
     poweron = models.BooleanField(default=False)
-    ip = models.GenericIPAddressField()
+    ip = models.GenericIPAddressField(default='0.0.0.0')
     password = models.CharField(max_length=100, null=True)
     pass_hash = models.CharField(max_length=100, default='None')
 
@@ -49,4 +49,4 @@ class Mapper(models.Model):
 class MapperForm(forms.ModelForm):
     class Meta:
         model = Mapper
-        fields = ['name', 'ip', 'password']
+        fields = ['name', 'password']

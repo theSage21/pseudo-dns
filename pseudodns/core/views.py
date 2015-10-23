@@ -21,7 +21,8 @@ def status(request, name):
     instance = get_object_or_404(models.Mapper, name=name)
     data = {'name': instance.name,
             'ip': instance.ip,
-            'poweron': instance.poweron}
+            'poweron': instance.poweron,
+            'stamp': instance.stamp}
     return JsonResponse(data)
 
 

@@ -1,6 +1,9 @@
 pseudo-dns
 ==========
 
+A django project to provide Pseudo DNS like services.
+
+
 A pseudo DNS service for things like setting up a way to bind a Name to an IP address which changes a lot. Used by me to quickly set up a name service for various machines I have to work on.
 
 

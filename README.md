@@ -1,7 +1,9 @@
 pseudo-dns
 ==========
 
-A django project to provide Pseudo DNS like services.
+A django project to provide Pseudo DNS like services.  
+*PS*  
+I have now learnt of Dynamic DNS. Have a look at [no-ip](http://www.noip.com/free) for a better solution than this
 
 
 A pseudo DNS service for things like setting up a way to bind a Name to an IP address which changes a lot. Used by me to quickly set up a name service for various machines I have to work on.
